@@ -1,0 +1,33 @@
+<title>ZotClub</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<header>
+    <h1>ZotClub</h1>
+    <h3>Find your club!</h3>
+</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Shopping Website</title>
+</head>
+<body>
+
+<div class="filters">
+    <form action="{{ url_for('filter_products') }}" method="post">
+        <label for="category">Filter by Category:</label>
+        <select id="category" name="category">
+            <option value="all">All</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Electronics">Electronics</option>
+            <!-- Add more categories as needed -->
+        </select>
+
+        <label for="sort">Sort by Name:</label>
+        <select id="sort" name="sort">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+
+        <button type="submit">Apply Filters</button>
+    </form>
+</div>
