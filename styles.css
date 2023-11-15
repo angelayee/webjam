@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ebee; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+.profile-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white; /* White card background */
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 10px solid #002855; /* UCI Blue */
+}
+
+.title {
+    color: #FFC72C; /* UCI Gold */
+    font-size: 18px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 3px solid #FFC72C; /* Gold border for the image */
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #002855; /* UCI Blue */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #002855; /* UCI Blue */
+}
+
+button:hover {
+    background-color: #FFC72C; /* UCI Gold */
+    color: #002855; /* UCI Blue */
+}
+
+a:hover {
+    color: #FFC72C; /* UCI Gold */
+}
