@@ -1,33 +1,55 @@
-<title>ZotClub</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<header>
-    <h1>ZotClub</h1>
-    <h3>Find your club!</h3>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ZotClub</title>
 </head>
+
 <body>
 
-<div class="filters">
-    <form action="{{ url_for('filter_products') }}" method="post">
-        <label for="category">Filter by Category:</label>
-        <select id="category" name="category">
-            <option value="all">All</option>
-            <option value="Business">Business</option>
-            <option value="Coding">Coding</option>
-            <!-- Add more categories as needed -->
-        </select>
+    <header>
+        <h1>ZotClub</h1>
+        <h3>Find your club!</h3>
+    </header>
 
-        <label for="sort">Sort by Name:</label>
-        <select id="sort" name="sort">
-            <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
-        </select>
+    <div class="filters">
+        <form action="{{ url_for('index') }}" method="get">
+            <label for="category">Filter by Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="Business">Business</option>
+                <option value="Coding">Coding</option>
+                <!-- Add more categories as needed -->
+            </select>
 
-        <button type="submit">Apply Filters</button>
-    </form>
-</div>
+            <label for="sort">Sort by Name:</label>
+            <select id="sort" name="sort">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+
+            <button type="submit">Apply Filters</button>
+        </form>
+    </div>
+
+    <div>
+        <div class="product">
+          <h3>CTC</h3>
+          <p>description</p>
+        </div>
+        <div class="product">
+          <h3>Hack at UCI</h3>
+          <p>description</p>
+        </div>
+        <div class="product">
+            <h3>ICSSC</h3>
+            <p>description</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
