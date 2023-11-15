@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 # Sample products
 products = [
-    {"name": "T-Shirt", "category": "Clothing"},
-    {"name": "Smartphone", "category": "Electronics"},
+    {"name": "", "category": ""},
+    {"name": "", "category": ""},
     # Add more products as needed
 ]
 
