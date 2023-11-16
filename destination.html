@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>ZotClub</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     </header>
 
     <div class="filters">
-        <form action="{{ url_for('index') }}" method="get">
+        <form action="{{ url_for('index') }}" method="get" onsubmit="sortProducts();">
             <label for="category">Filter by Category:</label>
             <select id="category" name="category">
                 <option value="all">All</option>
@@ -31,18 +32,18 @@
                 <option value="desc">Descending</option>
             </select>
 
-            <button type="submit">Apply Filters</button>
+            <button type="button" onclick="sortProducts();">Apply Filters</button>
         </form>
     </div>
 
-    <div>
+    <div id="products">
         <div class="product">
-          <h3>CTC</h3>
-          <p>description</p>
+            <h3>CTC</h3>
+            <p>description</p>
         </div>
         <div class="product">
-          <h3>Hack at UCI</h3>
-          <p>description</p>
+            <h3>Hack at UCI</h3>
+            <p>description</p>
         </div>
         <div class="product">
             <h3>ICSSC</h3>
