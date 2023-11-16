@@ -18,11 +18,17 @@
 
     <div class="filters">
         <form action="{{ url_for('index') }}" method="get" onsubmit="sortProducts();">
-            <label for="category">Filter by Category:</label>
-            <select id="category" name="category">
+            <label for="major">Filter by Major:</label>
+            <select id="major" name="major">
                 <option value="all">All</option>
-                <option value="Business">Business</option>
-                <option value="Coding">Coding</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Business Information Management">Business Information Management</option>
+                <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Game Design and Interactive">Game Design and Interactive</option>
+                <option value="Informatics">Informatics</option>
+                <option value="Information and Computer Science">Information and Computer Science</option>
                 <!-- Add more categories as needed -->
             </select>
 
